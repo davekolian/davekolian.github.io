@@ -1,0 +1,9 @@
+body {
+  margin: 0 auto;
+}
+
+#nav_bar {
+  width: auto;
+  height: 50px;
+  background-color: red;
+}
