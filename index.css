@@ -181,12 +181,45 @@ h4 {
   margin: 0 auto;
 }
 
+#code_works a {
+  margin: 0 auto;
+  width: auto;
+  color: #000000;
+}
+
+#code_works #box:hover h4 {
+  color: black;
+  background-color: #f8fff8;
+}
+
+#code_works #box:hover p {
+  color: white;
+}
+
+#code_works #box:hover {
+  background-color: #3f4a3c;
+}
+
+#link_maker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 #code_works #projects h4 {
   margin: 0 auto;
   margin-top: 30px;
   font-size: 20px;
   text-align: center;
   font-family: Kiona;
+  color: #ffffff;
+  background-color: #1b3d2f;
+  width: 50%;
+  padding: 7px;
+  border-radius: 5px;
 }
 
 #code_works #projects p {
@@ -204,13 +237,7 @@ h4 {
   display: flex;
 }
 
-#code_works #box1,
-#code_works #box2,
-#code_works #box3,
-#code_works #box4,
-#code_works #box5,
-#code_works #box6,
-#code_works #box7 {
+#code_works #box {
   background-color: white;
   border-radius: 15px;
   width: 261px;
@@ -219,22 +246,7 @@ h4 {
   margin-right: 30px;
   margin-bottom: 30px;
   flex: 1;
-}
-
-#code_works #button_more_code {
-  width: fit-content;
-  height: fit-content;
-  background-color: #1b3d2f;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-
-#code_works #button_more_code p {
-  color: #ffffff;
-  font-family: Kiona;
-  font-size: 30px;
-  padding: 12px;
-  margin: 0 auto;
+  position: relative;
 }
 
 #galleria {
@@ -314,17 +326,20 @@ h4 {
 }
 
 #contact_me {
-  width: 100%;
-  height: 200px;
+  width: auto;
+  height: auto;
   margin: 0 auto;
   display: flex;
-  background-color: #5f807e;
   text-align: center;
 }
 
 #contact_me h2 {
+  margin: 25px auto;
   font-family: Kiona;
-  padding: 5px;
+  padding: 7px;
+  background-color: #ffffff;
+  width: fit-content;
+  border-radius: 5px;
 }
 
 #contact_me p {
@@ -339,6 +354,8 @@ h4 {
   height: 200px;
   margin: 0 auto;
   flex: 1;
+  background-color: #b3d9d9;
+  padding-bottom: 20px;
 }
 
 #contact_me #links {
@@ -346,6 +363,8 @@ h4 {
   height: 200px;
   margin: 0 auto;
   flex: 1;
+  background-color: #7ab5b5;
+  padding-bottom: 20px;
 }
 
 #contact_me img {
