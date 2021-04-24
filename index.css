@@ -3,8 +3,25 @@
   src: url("kiona-regular-webfont.woff");
 }
 
+@font-face {
+  font-family: Quicksand-Book;
+  src: url("quicksand_book-webfont.woff");
+}
+
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url("quicksand_bold-webfont.woff");
+}
+
 body {
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
 }
 
 #nav_bar_outer {
@@ -26,6 +43,14 @@ body {
   height: inherit;
 }
 
+#nav_bar_inner p {
+  font-family: Kiona;
+  color: black;
+  display: inline;
+  margin: 0 4vw 2vh auto;
+  font-size: 20px;
+}
+
 #nav_bar_inner ul {
   list-style-type: none;
   margin: 2vh 4vw 0 auto;
@@ -34,7 +59,7 @@ body {
 
 #nav_bar_inner li {
   display: inline;
-  color: white;
+  color: black;
   font-family: Kiona;
   font-size: 15px;
   margin: 0 2vw 0 0;
@@ -43,26 +68,204 @@ body {
 #welcome_page {
   width: 100%;
   height: 900px;
-  background-image: url("welcome_background.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 60%;
-  background-size: cover;
+  background-color: #d4d3be;
+  margin: 0 auto;
+}
+
+#welcome_page h1,
+h3 {
+  color: black;
+  font-family: Kiona;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#welcome_page h1 {
+  display: inline-block;
+  margin-top: 20%;
+  margin-left: 30%;
+  font-size: 45px;
+}
+
+#welcome_page h3 {
+  display: inline-block;
+  margin-left: 33%;
+  font-size: 20px;
+}
+
+#circle {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 7%;
+  margin-left: 45%;
+}
+
+#welcome_page p {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+  text-align: center;
+  font-family: Quicksand-Book;
+  font-size: 20px;
 }
 
 #code_works {
   width: auto;
-  height: 500px;
-  background-color: blue;
+  height: 950px;
+  background-color: #03203d;
+  margin: 0 auto;
+}
+
+#code_works h1 {
+  color: white;
+  font-family: Kiona;
+  font-size: 45px;
+  margin: 0 auto;
+  margin-left: 38%;
+  padding-top: 5%;
+}
+
+#code_works #button_more_code {
+  width: fit-content;
+  height: fit-content;
+  background-color: orange;
+  margin: 0 auto;
+}
+
+#code_works #button_more_code p {
+  color: #000000;
+  font-family: Kiona;
+  font-size: 30px;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+#code_works #projects {
+  margin: 0 auto;
+  margin-top: 8%;
+  margin-left: 12%;
+}
+
+#code_works #projects h4 {
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 22px;
+  text-align: center;
+  font-family: Kiona;
+}
+
+#code_works #projects p {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Quicksand-Book;
+}
+
+#code_works #top,
+#code_works #bottom {
+  margin: 0 auto;
+  display: block;
+}
+
+#code_works #box1,
+#code_works #box2,
+#code_works #box3,
+#code_works #box4,
+#code_works #box5,
+#code_works #box6,
+#code_works #box7,
+#code_works #box8 {
+  background-color: white;
+  border-radius: 15px;
+  width: 261px;
+  height: 261px;
+  margin-top: auto;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 #galleria {
   width: auto;
-  height: 500px;
+  height: 950px;
   background-color: aqua;
+  margin: 0 auto;
+}
+
+#galleria h1 {
+  color: white;
+  font-family: Kiona;
+  font-size: 45px;
+  margin: 0 auto;
+  margin-left: 38%;
+  padding-top: 5%;
+}
+
+#galleria #button_more_code {
+  width: fit-content;
+  height: fit-content;
+  background-color: orange;
+  margin: 0 auto;
+}
+
+#galleria #button_more_code p {
+  color: #000000;
+  font-family: Kiona;
+  font-size: 3px;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+#galleria #projects {
+  margin: 0 auto;
+  margin-top: 8%;
+  /*margin-left: 12%;*/
+}
+
+#galleria #projects h4 {
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 22px;
+  text-align: center;
+  font-family: Kiona;
+}
+
+/*#galleria #projects p {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Quicksand-Book;
+}*/
+
+#galleria #top,
+#galleria #bottom {
+  width: 1305px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#galleria #box1,
+#galleria #box2,
+#galleria #box3,
+#galleria #box4,
+#galleria #box5,
+#galleria #box6,
+#galleria #box7,
+#galleria #box8,
+#galleria #box9,
+#galleria #box10 {
+  margin: 0 auto;
+  background-color: red;
+  width: 261px;
+  height: 261px;
+
+  flex: 1;
 }
 
 #about_me {
   width: auto;
-  height: 500px;
+  height: 100px;
   background-color: aquamarine;
 }
