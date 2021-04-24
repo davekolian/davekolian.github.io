@@ -1,16 +1,16 @@
 @font-face {
   font-family: Kiona;
-  src: url("kiona-regular-webfont.woff");
+  src: url("/assets/fonts/kiona-regular-webfont.woff");
 }
 
 @font-face {
   font-family: Quicksand-Book;
-  src: url("quicksand_book-webfont.woff");
+  src: url("/assets/fonts/quicksand_book-webfont.woff");
 }
 
 @font-face {
   font-family: Quicksand-Bold;
-  src: url("quicksand_bold-webfont.woff");
+  src: url("/assets/fonts/quicksand_bold-webfont.woff");
 }
 
 body {
@@ -189,7 +189,7 @@ h3 {
 
 #galleria {
   width: auto;
-  height: 950px;
+  height: 920px;
   background-color: aqua;
   margin: 0 auto;
 }
@@ -213,14 +213,15 @@ h3 {
 #galleria #button_more_code p {
   color: #000000;
   font-family: Kiona;
-  font-size: 3px;
+  font-size: 30px;
   padding: 12px;
   margin: 0 auto;
 }
 
 #galleria #projects {
   margin: 0 auto;
-  margin-top: 8%;
+  margin-top: 5%;
+  margin-bottom: 2%;
   /*margin-left: 12%;*/
 }
 
@@ -260,12 +261,53 @@ h3 {
   background-color: red;
   width: 261px;
   height: 261px;
-
   flex: 1;
 }
 
-#about_me {
-  width: auto;
-  height: 100px;
-  background-color: aquamarine;
+#contact_me {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  background-color: grey;
+  text-align: center;
+}
+
+#contact_me h2 {
+  font-family: Kiona;
+  padding: 5px;
+}
+
+#contact_me p {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-family: Quicksand-Book;
+}
+
+#contact_me #about_me {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+#contact_me #links {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+#contact_me img {
+  width: 40px;
+  height: 40px;
+}
+
+#contact_me ul {
+  list-style-type: none;
+}
+
+#contact_me li {
+  display: inline;
 }
