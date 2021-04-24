@@ -67,7 +67,7 @@ h4 {
 
 #welcome_page {
   width: 100%;
-  height: 900px;
+  height: 100vh;
   background-color: #d4d3be;
   margin: 0 auto;
 }
@@ -82,24 +82,25 @@ h3 {
 
 #welcome_page h1 {
   display: inline-block;
-  margin-top: 20%;
-  margin-left: 30%;
-  font-size: 45px;
+  margin-top: 16%;
+  margin-left: 27%;
+  font-size: 50px;
 }
 
 #welcome_page h3 {
+  margin-top: 0.5%;
   display: inline-block;
-  margin-left: 33%;
-  font-size: 20px;
+  margin-left: 32%;
+  font-size: 22px;
 }
 
 #circle {
+  margin: 0 auto;
   width: 200px;
   height: 200px;
   background-color: white;
   border-radius: 50%;
-  margin-top: 7%;
-  margin-left: 45%;
+  margin-top: 5%;
 }
 
 #welcome_page p {
@@ -113,8 +114,8 @@ h3 {
 
 #code_works {
   width: auto;
-  height: 950px;
-  background-color: #03203d;
+  height: 910px;
+  background-color: #aab8a5;
   margin: 0 auto;
 }
 
@@ -127,31 +128,21 @@ h3 {
   padding-top: 5%;
 }
 
-#code_works #button_more_code {
-  width: fit-content;
-  height: fit-content;
-  background-color: orange;
-  margin: 0 auto;
-}
-
-#code_works #button_more_code p {
-  color: #000000;
-  font-family: Kiona;
-  font-size: 30px;
-  padding: 12px;
-  margin: 0 auto;
+#code_works #langs {
+  font-family: Quicksand-Book;
+  color: #ffffff;
+  text-align: center;
+  margin: 50px;
 }
 
 #code_works #projects {
   margin: 0 auto;
-  margin-top: 8%;
-  margin-left: 12%;
 }
 
 #code_works #projects h4 {
   margin: 0 auto;
   margin-top: 30px;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   font-family: Kiona;
 }
@@ -159,14 +150,16 @@ h3 {
 #code_works #projects p {
   margin: 0 auto;
   padding: 20px;
+  font-size: 15px;
   text-align: center;
   font-family: Quicksand-Book;
 }
 
 #code_works #top,
 #code_works #bottom {
+  width: 1044px;
   margin: 0 auto;
-  display: block;
+  display: flex;
 }
 
 #code_works #box1,
@@ -175,22 +168,37 @@ h3 {
 #code_works #box4,
 #code_works #box5,
 #code_works #box6,
-#code_works #box7,
-#code_works #box8 {
+#code_works #box7 {
   background-color: white;
   border-radius: 15px;
   width: 261px;
   height: 261px;
   margin-top: auto;
-  display: inline-block;
   margin-right: 30px;
   margin-bottom: 30px;
+  flex: 1;
+}
+
+#code_works #button_more_code {
+  width: fit-content;
+  height: fit-content;
+  background-color: #1b3d2f;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#code_works #button_more_code p {
+  color: #ffffff;
+  font-family: Kiona;
+  font-size: 30px;
+  padding: 12px;
+  margin: 0 auto;
 }
 
 #galleria {
   width: auto;
-  height: 920px;
-  background-color: aqua;
+  height: 1100px;
+  background-color: #829c90;
   margin: 0 auto;
 }
 
@@ -199,53 +207,33 @@ h3 {
   font-family: Kiona;
   font-size: 45px;
   margin: 0 auto;
-  margin-left: 38%;
+  margin-left: 37%;
   padding-top: 5%;
-}
-
-#galleria #button_more_code {
-  width: fit-content;
-  height: fit-content;
-  background-color: orange;
-  margin: 0 auto;
-}
-
-#galleria #button_more_code p {
-  color: #000000;
-  font-family: Kiona;
-  font-size: 30px;
-  padding: 12px;
-  margin: 0 auto;
 }
 
 #galleria #projects {
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 4%;
   margin-bottom: 2%;
   /*margin-left: 12%;*/
+  line-height: 0;
+  column-count: 5;
+  column-gap: 0px;
+  width: 1305px;
 }
 
 #galleria #projects h4 {
   margin: 0 auto;
-  margin-top: 35px;
   font-size: 22px;
   text-align: center;
   font-family: Kiona;
 }
 
-/*#galleria #projects p {
+/* #galleria #top,
+#galleria #bottom,
+#galleria #middle {
   margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  font-family: Quicksand-Book;
-}*/
-
-#galleria #top,
-#galleria #bottom {
-  width: 1305px;
-  margin: 0 auto;
-  display: flex;
-}
+} */
 
 #galleria #box1,
 #galleria #box2,
@@ -256,12 +244,44 @@ h3 {
 #galleria #box7,
 #galleria #box8,
 #galleria #box9,
-#galleria #box10 {
+#galleria #box10,
+#galleria #box11,
+#galleria #box12,
+#galleria #box13,
+#galleria #box14,
+#galleria #box15 {
   margin: 0 auto;
-  background-color: red;
-  width: 261px;
-  height: 261px;
-  flex: 1;
+  width: auto;
+  margin: 5px;
+}
+
+#galleria img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+#galleria #box1 img {
+  height: 70vh;
+  width: auto;
+}
+
+#galleria #button_more_code {
+  width: fit-content;
+  height: fit-content;
+  background-color: #1b3d2f;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#galleria #button_more_code p {
+  color: #ffffff;
+  font-family: Kiona;
+  font-size: 30px;
+  padding: 12px;
+  margin: 0 auto;
 }
 
 #contact_me {
@@ -269,7 +289,7 @@ h3 {
   height: 200px;
   margin: 0 auto;
   display: flex;
-  background-color: grey;
+  background-color: #5f807e;
   text-align: center;
 }
 
