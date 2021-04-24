@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/logo_favicons/logo_white.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Dave Kol's Portfolio</title>
   </head>
   <body>
@@ -14,9 +15,9 @@
         <img src="assets/logo_favicons/logo.png" alt="Dave Kol's logo" />
         <p>Dave Kol</p>
         <ul>
-          <li><a href="#code_works">Code Works</a></li>
-          <li><a href="#galleria">Art Work</a></li>
-          <li><a href="#contact_me">About Me</a></li>
+          <li><a class="single" href="#code_works" onclick="clickSingleA(this)">Code Works</a></li>
+          <li><a class="single" href="#galleria" onclick="clickSingleA(this)">Art Work</a></li>
+          <li><a class="single" href="#contact_me" onclick="clickSingleA(this)">About Me</a></li>
         </ul>
       </div>
     </div>
@@ -213,4 +214,17 @@
       </div>
     </div>
   </body>
+  <script>
+    function clickSingleA(a)
+    {
+      items = document.querySelectorAll('.active'); //should be ".single.active"
+
+      if(items.length) 
+      {
+          items[0].className = 'single';
+      }
+
+      a.className = 'single active';
+    }
+  </script>
 </html>
