@@ -33,3 +33,7 @@ function clickSingleA(a) {
 
   a.className = "single active";
 }
+
+function openProject(link) {
+  window.open(link, "mywindow");
+}
