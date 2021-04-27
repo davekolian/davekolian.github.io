@@ -25,44 +25,44 @@ $(window).scroll(function () {
 
   if ($(window).scrollTop() < vh(95)) {
     console.log("welcome");
-    $(".code_works").removeClass("on");
-    $(".galleria").removeClass("on");
-    $(".contact_me").removeClass("on");
+    $(".code_works").removeClass("active");
+    $(".galleria").removeClass("active");
+    $(".contact_me").removeClass("active");
   } else if (
     $(window).scrollTop() >= vh(95) &&
     $(window).scrollTop() < vh(95) + 910
   ) {
     console.log("code_works");
-    $(".code_works").addClass("on");
-    $(".galleria").removeClass("on");
-    $(".contact_me").removeClass("on");
+    $(".code_works").addClass("active");
+    $(".galleria").removeClass("active");
+    $(".contact_me").removeClass("active");
   } else if (
     $(window).scrollTop() >= vh(95) + 910 &&
     $(window).scrollTop() + $(window).height() < $(document).height() - 100
   ) {
     console.log("galleria");
-    $(".code_works").removeClass("on");
-    $(".galleria").addClass("on");
-    $(".contact_me").removeClass("on");
+    $(".code_works").removeClass("active");
+    $(".galleria").addClass("active");
+    $(".contact_me").removeClass("active");
   } else if (
     $(window).scrollTop() + $(window).height() >=
     $(document).height() - 100
   ) {
     console.log("contact_me");
-    $(".code_works").removeClass("on");
-    $(".galleria").removeClass("on");
-    $(".contact_me").addClass("on");
+    $(".code_works").removeClass("active");
+    $(".galleria").removeClass("active");
+    $(".contact_me").addClass("active");
   }
 });
 
 function clickSingleA(a) {
-  items = document.querySelectorAll(".active"); //should be ".single.active"
+  // items = document.querySelectorAll(".active"); //should be ".single.active"
 
-  if (items.length) {
-    items[0].className = "single";
-  }
+  // if (items.length) {
+  //   items[0].className = "single";
+  // }
 
-  a.className = "single active";
+  a.addClass("active");
 }
 
 function openProject(link) {

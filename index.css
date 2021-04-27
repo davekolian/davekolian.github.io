@@ -175,7 +175,7 @@ h4 {
 .fixed-header #nav_bar_inner a.active,
 .on {
   background-color: #9baebc;
-  color: #000000;
+  color: #000000 !important;
 }
 
 #welcome_page {
