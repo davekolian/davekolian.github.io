@@ -22,6 +22,37 @@ $(window).scroll(function () {
     $("nav").removeClass("fixed-header");
     $("nav").addClass("nav_on_top");
   }
+
+  if ($(window).scrollTop() < vh(95)) {
+    console.log("welcome");
+    $(".code_works").removeClass("on");
+    $(".galleria").removeClass("on");
+    $(".contact_me").removeClass("on");
+  } else if (
+    $(window).scrollTop() >= vh(95) &&
+    $(window).scrollTop() < vh(95) + 910
+  ) {
+    console.log("code_works");
+    $(".code_works").addClass("on");
+    $(".galleria").removeClass("on");
+    $(".contact_me").removeClass("on");
+  } else if (
+    $(window).scrollTop() >= vh(95) + 910 &&
+    $(window).scrollTop() + $(window).height() < $(document).height() - 100
+  ) {
+    console.log("galleria");
+    $(".code_works").removeClass("on");
+    $(".galleria").addClass("on");
+    $(".contact_me").removeClass("on");
+  } else if (
+    $(window).scrollTop() + $(window).height() >=
+    $(document).height() - 100
+  ) {
+    console.log("contact_me");
+    $(".code_works").removeClass("on");
+    $(".galleria").removeClass("on");
+    $(".contact_me").addClass("on");
+  }
 });
 
 function clickSingleA(a) {

@@ -172,7 +172,8 @@ h4 {
 }
 
 .fixed-header #nav_bar_inner a:hover,
-.fixed-header #nav_bar_inner a.active {
+.fixed-header #nav_bar_inner a.active,
+.on {
   background-color: #9baebc;
   color: #000000;
 }
@@ -349,7 +350,7 @@ h4 {
 
 #galleria {
   width: auto;
-  height: auto;
+  height: 860px;
   background-color: #829c90;
   margin: 0 auto;
 }
