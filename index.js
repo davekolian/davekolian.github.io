@@ -15,10 +15,11 @@ function vw(v) {
 }
 
 $(window).scroll(function () {
+  var nav_bar_height = $("nav").height();
   var galleria_height = $("#galleria").height();
   var code_works_height = $("#code_works").height();
   var welcome_height = $("#welcome_page").height();
-  if ($(window).scrollTop() >= welcome_height) {
+  if ($(window).scrollTop() >= nav_bar_height) {
     $("nav").addClass("fixed-header");
     $("nav").removeClass("nav_on_top");
   } else {
@@ -31,14 +32,16 @@ $(window).scroll(function () {
     $(".galleria").removeClass("active");
     $(".contact_me").removeClass("active");
   } else if (
-    $(window).scrollTop() >= code_works_height &&
-    $(window).scrollTop() < welcome_height + code_works_height
+    $(window).scrollTop() >= nav_bar_height + welcome_height - 100 &&
+    $(window).scrollTop() <
+      nav_bar_height + welcome_height + code_works_height - 100
   ) {
     $(".code_works").addClass("active");
     $(".galleria").removeClass("active");
     $(".contact_me").removeClass("active");
   } else if (
-    $(window).scrollTop() >= vh(95) + code_works_height &&
+    $(window).scrollTop() >=
+      nav_bar_height + welcome_height + code_works_height - 100 &&
     $(window).scrollTop() + $(window).height() < $(document).height() - 100
   ) {
     $(".code_works").removeClass("active");
