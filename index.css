@@ -17,8 +17,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+* {
   margin: 0 auto;
+  padding: 0;
 }
 
 h1,
@@ -186,25 +187,29 @@ h4 {
   width: 100%;
   height: 100vh;
   background-color: #d4d3be;
-  margin: 0 auto;
-  display: inline-block;
-}
-
-#right {
-  margin: 0 auto;
+  margin: auto;
   position: relative;
-  top: 30%;
-  left: 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #content {
-  margin: 0 auto;
+  margin: auto;
   position: relative;
-  top: 33vh;
-  display: grid;
-  grid-template-columns: auto auto;
-  height: 250px;
-  width: fit-content;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#right {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
 
 #name_popup {
@@ -215,9 +220,8 @@ h4 {
 #welcome_page h3 {
   color: #000000;
   font-family: Kiona;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
-  width: auto;
 }
 
 #welcome_page h1 {
@@ -229,30 +233,24 @@ h4 {
 }
 
 #circle {
-  margin: 0 auto;
+  margin: auto;
   width: 250px;
   height: 250px;
   background-image: url("assets/welcome_mini_dave.jpg");
   background-size: cover;
   background-position: -50px center;
   border-radius: 50%;
-  display: inline-block;
-}
-
-#welcome_page p {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 2%;
-  text-align: center;
-  font-family: Quicksand-Book;
-  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 #code_works {
-  width: auto;
-  height: 910px;
-  background-color: #aab8a5;
+  width: 100%;
+  height: auto;
+  background-color: hsl(104, 12%, 68%);
   margin: 0 auto;
+  padding-bottom: 20px;
+  display: flex;
+  flex-flow: column wrap; /* So put it into a column if possible else wrap it into a row*/
 }
 
 #code_works h1 {
@@ -260,8 +258,8 @@ h4 {
   font-family: Kiona;
   font-size: 45px;
   margin: 0 auto;
-  margin-left: 38%;
   padding-top: 5%;
+  flex: 2;
 }
 
 #code_works #langs {
@@ -269,10 +267,15 @@ h4 {
   color: #000000;
   text-align: center;
   margin: 50px;
+  font-size: 22px;
+  flex: 1;
 }
 
 #code_works #projects {
   margin: 0 auto;
+  padding-bottom: 30px;
+  width: auto;
+  flex: 3;
 }
 
 #code_works a {
@@ -292,15 +295,6 @@ h4 {
 
 #code_works #box:hover {
   background-color: #3f4a3c;
-}
-
-#link_maker {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 #code_works #projects h4 {
@@ -332,7 +326,7 @@ h4 {
 
 #code_works #top,
 #code_works #bottom {
-  width: 1044px;
+  width: 70%;
   margin: 0 auto;
   display: flex;
 }
@@ -340,7 +334,7 @@ h4 {
 #code_works #box {
   background-color: white;
   border-radius: 15px;
-  width: 261px;
+  width: auto;
   height: 261px;
   margin-top: auto;
   margin-right: 30px;
@@ -353,8 +347,8 @@ h4 {
 }
 
 #galleria {
-  width: auto;
-  height: 860px;
+  width: 100%;
+  height: auto;
   background-color: #829c90;
   margin: 0 auto;
 }
@@ -362,7 +356,7 @@ h4 {
 #galleria h1 {
   color: #000000;
   font-family: Kiona;
-  font-size: 45px;
+  font-size: 3vw;
   margin: 0 auto;
   margin-left: 37%;
   padding-top: 5%;
@@ -372,11 +366,11 @@ h4 {
   margin: 0 auto;
   margin-top: 4%;
   padding-bottom: 5%;
-  /*margin-left: 12%;*/
+  margin-left: 8%;
   line-height: 0;
   column-count: 5;
   column-gap: 0px;
-  width: 1305px;
+  width: auto;
 }
 
 #galleria #projects h4 {
@@ -392,10 +386,11 @@ h4 {
   margin: 0 auto;
 } */
 
-#galleria #box {
+#galleria #box,
+.box1 {
   margin: 0 auto;
   margin: 0 10px 10px 0;
-  position: relative;
+  width: 96%;
 }
 
 #galleria #box h2 {
@@ -431,12 +426,12 @@ h4 {
 }
 
 #galleria .box1 img {
-  height: 75vh;
-  width: auto;
+  height: auto;
+  width: 80%;
 }
 
 #contact_me {
-  width: auto;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   display: flex;
@@ -450,6 +445,7 @@ h4 {
   background-color: #ffffff;
   width: fit-content;
   border-radius: 5px;
+  font-size: 1.6vw;
 }
 
 #contact_me p {
@@ -457,6 +453,7 @@ h4 {
   width: 70%;
   text-align: center;
   font-family: Quicksand-Book;
+  font-size: 1.05vw;
 }
 
 #contact_me #about_me {
@@ -492,4 +489,41 @@ h4 {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #welcome_page h1 {
+    font-size: 40px;
+  }
+  #welcome_page h3 {
+    font-size: 15px;
+  }
+
+  #code_works h1 {
+    font-size: 30px;
+  }
+
+  #code_works #langs {
+    font-size: 15px;
+  }
+
+  #code_works #top,
+  #code_works #bottom {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+  #code_works {
+    padding-top: 20px;
+  }
+
+  #code_works #box {
+    height: auto;
+    padding-top: 20px;
+  }
+
+  #code_works #box h4 {
+    margin: 0 auto;
+    font-size: 17px;
+  }
 }
