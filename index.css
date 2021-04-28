@@ -495,12 +495,14 @@ a {
     font-size: 12px;
   }
 
-  .nav_on_top #nav_bar_inner p {
+  .nav_on_top #nav_bar_inner p,
+  .fixed-header #nav_bar_inner p {
     font-size: 15px;
   }
 
-  .fixed-header #nav_bar_inner p {
-    font-size: 14px;
+  .fixed-header #nav_bar_inner a,
+  .nav_on_top #nav_bar_inner a {
+    padding: 7px;
   }
 }
 
@@ -510,6 +512,8 @@ a {
   }
   #welcome_page h3 {
     font-size: 15px;
+    margin-top: 10px;
+    padding: 5px;
   }
 
   #code_works {
@@ -527,6 +531,8 @@ a {
   #code_works #projects {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    margin-left: 12%;
   }
 
   #code_works #box {
