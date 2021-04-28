@@ -491,6 +491,10 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+  #welcome_page {
+    margin-top: -4px;
+  }
+
   #nav_bar_inner li a {
     font-size: 12px;
   }
