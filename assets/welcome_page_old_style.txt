@@ -1,0 +1,322 @@
+@font-face {
+  font-family: Kiona;
+  src: url("/assets/fonts/kiona-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: Quicksand-Book;
+  src: url("/assets/fonts/quicksand_book-webfont.woff");
+}
+
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url("/assets/fonts/quicksand_bold-webfont.woff");
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+#nav_bar_outer {
+  width: 100%;
+  height: 12vh;
+  margin: 0 auto;
+  position: fixed;
+}
+
+#nav_bar_inner {
+  position: relative;
+  width: auto;
+  height: 6vh;
+  margin: 0 6vw;
+  top: 6vh;
+}
+
+#nav_bar_inner img {
+  height: inherit;
+}
+
+#nav_bar_inner p {
+  font-family: Kiona;
+  color: black;
+  display: inline;
+  margin: 0 4vw 2vh auto;
+  font-size: 20px;
+}
+
+#nav_bar_inner ul {
+  list-style-type: none;
+  margin: 2vh 4vw 0 auto;
+  float: right;
+}
+
+#nav_bar_inner li {
+  display: inline;
+  color: black;
+  font-family: Kiona;
+  font-size: 15px;
+  margin: 0 2vw 0 0;
+}
+
+#welcome_page {
+  width: 100%;
+  height: 100vh;
+  background-color: #d4d3be;
+  margin: 0 auto;
+}
+
+#welcome_page h1,
+h3 {
+  color: black;
+  font-family: Kiona;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#welcome_page h1 {
+  display: inline-block;
+  margin-top: 16%;
+  margin-left: 27%;
+  font-size: 50px;
+}
+
+#welcome_page h3 {
+  margin-top: 0.5%;
+  display: inline-block;
+  margin-left: 32%;
+  font-size: 22px;
+}
+
+#circle {
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  background-image: url("assets/welcome_mini_dave.jpg");
+  background-size: cover;
+  background-position: -50px center;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+
+#welcome_page p {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+  text-align: center;
+  font-family: Quicksand-Book;
+  font-size: 20px;
+}
+
+#code_works {
+  width: auto;
+  height: 910px;
+  background-color: #aab8a5;
+  margin: 0 auto;
+}
+
+#code_works h1 {
+  color: white;
+  font-family: Kiona;
+  font-size: 45px;
+  margin: 0 auto;
+  margin-left: 38%;
+  padding-top: 5%;
+}
+
+#code_works #langs {
+  font-family: Quicksand-Book;
+  color: #ffffff;
+  text-align: center;
+  margin: 50px;
+}
+
+#code_works #projects {
+  margin: 0 auto;
+}
+
+#code_works #projects h4 {
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Kiona;
+}
+
+#code_works #projects p {
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  font-family: Quicksand-Book;
+}
+
+#code_works #top,
+#code_works #bottom {
+  width: 1044px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#code_works #box1,
+#code_works #box2,
+#code_works #box3,
+#code_works #box4,
+#code_works #box5,
+#code_works #box6,
+#code_works #box7 {
+  background-color: white;
+  border-radius: 15px;
+  width: 261px;
+  height: 261px;
+  margin-top: auto;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex: 1;
+}
+
+#code_works #button_more_code {
+  width: fit-content;
+  height: fit-content;
+  background-color: #1b3d2f;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#code_works #button_more_code p {
+  color: #ffffff;
+  font-family: Kiona;
+  font-size: 30px;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+#galleria {
+  width: auto;
+  height: auto;
+  background-color: #829c90;
+  margin: 0 auto;
+}
+
+#galleria h1 {
+  color: white;
+  font-family: Kiona;
+  font-size: 45px;
+  margin: 0 auto;
+  margin-left: 37%;
+  padding-top: 5%;
+}
+
+#galleria #projects {
+  margin: 0 auto;
+  margin-top: 4%;
+  padding-bottom: 5%;
+  /*margin-left: 12%;*/
+  line-height: 0;
+  column-count: 5;
+  column-gap: 0px;
+  width: 1305px;
+}
+
+#galleria #projects h4 {
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: center;
+  font-family: Kiona;
+}
+
+/* #galleria #top,
+#galleria #bottom,
+#galleria #middle {
+  margin: 0 auto;
+} */
+
+#galleria #box {
+  margin: 0 auto;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+
+#galleria #box h2 {
+  display: none;
+}
+
+#galleria #box:hover h2 {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Kiona;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 5px;
+}
+
+#galleria img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+#galleria .box1 img {
+  height: 75vh;
+  width: auto;
+}
+
+#contact_me {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #5f807e;
+  text-align: center;
+}
+
+#contact_me h2 {
+  font-family: Kiona;
+  padding: 5px;
+}
+
+#contact_me p {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-family: Quicksand-Book;
+}
+
+#contact_me #about_me {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+#contact_me #links {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+#contact_me img {
+  width: 40px;
+  height: 40px;
+}
+
+#contact_me ul {
+  list-style-type: none;
+}
+
+#contact_me li {
+  display: inline;
+}
