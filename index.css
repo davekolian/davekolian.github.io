@@ -226,7 +226,7 @@ h4 {
 }
 
 #left h2 {
-  font-family: Quicksand;
+  font-family: Quicksand-Book;
 }
 
 #right {
@@ -249,7 +249,7 @@ h4 {
 
 #right #text { 
   width: 60%;
-  font-family: Quicksand;
+  font-family: Quicksand-Book;
   font-size: 18px;
 }
 
